@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anna Czyżak - Fizjoterapia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            margin: 0; padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa;
+            color: #222;
+        }
+        header {
+            background-color: #0b5a81;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 2.2rem;
+        }
+        nav {
+            background-color: #07455c;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #e6b133;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1588776814546-1679b365a157?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            border-bottom: 3px solid #0b5a81;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            color: #0b5a81;
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+        .offer-list {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1.1rem;
+            color: #444;
+        }
+        .offer-list li {
+            margin-bottom: 10px;
+            padding-left: 18px;
+            position: relative;
+        }
+        .offer-list li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #e6b133;
+        }
+        .contact-info p {
+            font-size: 1.1rem;
+            margin: 8px 0;
+        }
+        footer {
+            background-color: #07455c;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .hero {
+                font-size: 1.8rem;
+                height: 200px;
+                padding: 0 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anna Czyżak - Fizjoterapia</h1>
+    </header>
+    <nav>
+        <a href="#oferta">Oferta</a>
+        <a href="#o-mnie">O mnie</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="hero">
+        Profesjonalna fizjoterapia dla Ciebie
+    </div>
+    <main>
+        <section id="oferta">
+            <h2>Oferta</h2>
+            <ul class="offer-list">
+                <li>Rehabilitacja pourazowa i pooperacyjna</li>
+                <li>Terapia manualna i masaż leczniczy</li>
+                <li>Indywidualne plany terapeutyczne</li>
+                <li>Ćwiczenia korekcyjne i profilaktyczne</li>
+                <li>Konsultacje i diagnoza funkcjonalna</li>
+            </ul>
+        </section>
+        <section id="o-mnie">
+            <h2>O mnie</h2>
+            <p>Cześć! Nazywam się Anna Czyżak i jestem dyplomowanym fizjoterapeutą z wieloletnim doświadczeniem. Moim celem jest pomoc pacjentom w powrocie do pełnej sprawności i poprawie jakości życia.</p>
+            <p>Specjalizuję się w terapii manualnej, rehabilitacji sportowej oraz leczeniu schorzeń układu mięśniowo-szkieletowego. Dbam o indywidualne podejście do każdego pacjenta oraz skuteczność stosowanych metod.</p>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <div class="contact-info">
+                <p><strong>Telefon:</strong> 123-456-789</p>
+                <p><strong>Email:</strong> anna.czyzak@example.com</p>
+                <p><strong>Adres:</strong> ul. Przykładowa 12, 00-000 Warszawa</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Anna Czyżak. Wszelkie prawa zastrzeżone.
+    </footer>
+</body>
+</html>
